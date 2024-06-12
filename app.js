@@ -310,7 +310,7 @@ function downloadResume() {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background: linear-gradient(to right, #84A59D 0%, #F28482 100%);
       }
       .container {
         max-width: 800px;
@@ -328,41 +328,41 @@ function downloadResume() {
         margin-bottom: 5px;
         padding-top: 3%;
       }
-      .basicinfo{
+      .basicinfo {
         border: 1px solid black;
         padding: 2%;
         margin-bottom: 2%;
       }
-        .skills{
-            border: 1px solid black;
-            padding: 2%;
-            margin-bottom: 2%;
-        }
-        .education{
-            border: 1px solid black;
-            padding: 2%;
-            margin-bottom: 2%;
-        }
-    .workexp{
-      border: 1px solid black;
-      padding: 2%;
-      margin-bottom: 2%;
-  }
-  .achive{
-    border: 1px solid black;
-    padding: 2%;
-    margin-bottom: 2%;
-}
-.project{
-  border: 1px solid black;
-    padding: 2%;
-    margin-bottom: 2%;
-}
-.social{
-  border: 1px solid black;
-    padding: 2%;
-    margin-bottom: 2%;
-}
+      .skills {
+        border: 1px solid black;
+        padding: 2%;
+        margin-bottom: 2%;
+      }
+      .education {
+        border: 1px solid black;
+        padding: 2%;
+        margin-bottom: 2%;
+      }
+      .workexp {
+        border: 1px solid black;
+        padding: 2%;
+        margin-bottom: 2%;
+      }
+      .achive {
+        border: 1px solid black;
+        padding: 2%;
+        margin-bottom: 2%;
+      }
+      .project {
+        border: 1px solid black;
+        padding: 2%;
+        margin-bottom: 2%;
+      }
+      .social {
+        border: 1px solid black;
+        padding: 2%;
+        margin-bottom: 2%;
+      }
     </style>
   </head>
   <body>

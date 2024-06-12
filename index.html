@@ -21,19 +21,19 @@
         <div id="basic-info" style="display: none;">
             <h2>Basic Info</h2>
             <div>
-                <input type="text" name="Full name" placeholder="Full Name">
+                <input type="text" name="Full name" placeholder="Full Name" pattern="[A-Za-z\s]{1,50}" title="Enter a valid full name" required>
             </div>
            <div>
-            <input type="text" name="Mobile Number" placeholder="Mobile Number">
+            <input type="text" name="Mobile Number" placeholder="Mobile Number" pattern="[0-9]{10}" title="Enter a valid 10-digit mobile number" required>
            </div>
            <div>
-            <input type="text" name="DOB" placeholder="DOB">
+            <input type="text" name="DOB" placeholder="DOB" pattern="\d{2}-\d{2}-\d{4}" title="Enter a valid date of birth in the format MM-DD-YYYY" required>
            </div>
            <div>
-            <input type="text" name="Title" placeholder="Title">
+            <input type="text" name="Title" placeholder="Title" pattern="[A-Za-z\s]{1,20}" title="Enter a valid title" required>
            </div>
            <div>
-            <input type="email" name="Email" placeholder="Email">
+            <input type="email" name="Email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address" required>
            </div>
               <div>
                 <textarea placeholder="address" name="address" id="address" cols="40" rows="10"></textarea>
@@ -47,27 +47,27 @@
         <div id="education" style="display: none;">
             <h2>Education</h2>
             <div>
-                <input type="text" name="institute name" placeholder="Institute name">
+                <input type="text" name="institute name" placeholder="Institute name" pattern="[A-Za-z\s]{1,50}" title="Enter a valid institute name" required>
             </div>
             <div>
                
-                <input type="text" name="STATE" id="" placeholder="STATE">
+                <input type="text" name="STATE" id="" placeholder="STATE" pattern="[A-Za-z\s]{1,20}" title="Enter a valid state" required>
             </div>
             <div>
              
-                <input type="text" name="DEGREE" id="" placeholder="DEGREE">
+                <input type="text" name="DEGREE" id="" placeholder="DEGREE" pattern="[A-Za-z\s]{1,20}" title="Enter a valid degree" required>
             </div>
             <div>
               
-                <input type="text" name="FIELD OF STUDY" id="" placeholder="FIELD OF STUDY"> 
+                <input type="text" name="FIELD OF STUDY" id="" placeholder="FIELD OF STUDY" pattern="[A-Za-z\s]{1,50}" title="Enter a valid field of study" required>
             </div>
             <div>
                
-                <input type="date" name="START DATE" id="" placeholder="START DATE">
+                <input type="date" name="START DATE" id="" placeholder="START DATE" required>
             </div>
             <div>
               
-                <input type="number" name="PERCENTAGE/CGPA" id="" placeholder="PERCENTAGE/CGPA"> 
+                <input type="number" name="PERCENTAGE/CGPA" id="" placeholder="PERCENTAGE/CGPA" pattern="[0-9]{1,3}" title="Enter a valid percentage or CGPA" required>
             </div>
             <button>save</button>
         </div>
@@ -78,19 +78,19 @@
         <div id="work-experience" style="display: none;">
             <h2>Work Experience</h2>
             <div>
-                <input type="text" name="EMPLOYER" placeholder="EMPLOYER" >
+                <input type="text" name="EMPLOYER" placeholder="EMPLOYER" pattern="[A-Za-z\s]{1,50}" title="Enter a valid employer" required>
             </div>
             <div>
                
-                <input type="text" name="JOB TITLE" id="" placeholder="JOB TITLE">
+                <input type="text" name="JOB TITLE" id="" placeholder="JOB TITLE" pattern="[A-Za-z\s]{1,50}" title="Enter a valid job title" required>
             </div>
             <div>
                 
-                <input type="date" name="START DATE" id="" placeholder="START DATE">
+                <input type="date" name="START DATE" id="" placeholder="START DATE" required>
             </div>
             <div>
                 
-                <input type="TEXT" name="STATE" id="" placeholder="STATE">
+                <input type="text" name="STATE" id="" placeholder="STATE" pattern="[A-Za-z\s]{1,20}" title="Enter a valid state" required>
             </div>
             <div>
                
@@ -104,7 +104,7 @@
         <div id="skills" style="display: none;">
             <div id="skill-center">
                <label for="">SKILLS</label>
-                <input type="text" name="skill" placeholder="Enter a skill">
+                <input type="text" name="skill" placeholder="Enter a skill" pattern="[A-Za-z\s]{1,20}" title="Enter a valid skill" required>
                 <button id="add" onclick="addSkill()">Add Skill</button>
             </div>
             <ul id="skill-list"></ul>
@@ -130,10 +130,10 @@
             <h2>Projects</h2>
             <h3>Highlight some of your major Projects. (Maximum 3)</h3>
             <div>
-                <input type="text" name="Project Title" id="" placeholder="PROJECT TITLE">
+                <input type="text" name="Project Title" id="" placeholder="PROJECT TITLE" pattern="[A-Za-z\s]{1,50}" title="Enter a valid project title" required>
             </div>
             <div>
-                <input type="text" name="Project URL" id="" placeholder="PROJECT URL">
+                <input type="text" name="Project URL" id="" placeholder="PROJECT URL" pattern="https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+/" title="Enter a valid URL" required>
             </div>
 
             <div>
@@ -152,11 +152,11 @@
             <h2>Social Links</h2>
            <div>
             
-            <input type="text" name="Github" id="" placeholder="Github">
+            <input type="text" name="Github" id="" placeholder="Github" pattern="https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+/" title="Enter a valid GitHub URL" required>
            </div>
            <div>
               
-                <input type="text" name="LinkedIn" id="" placeholder="LinkedIn"> 
+                <input type="text" name="LinkedIn" id="" placeholder="LinkedIn" pattern="https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+/" title="Enter a valid LinkedIn URL" required> 
             </div>
             <div>
                 <button id="socialbutton">save</button>
